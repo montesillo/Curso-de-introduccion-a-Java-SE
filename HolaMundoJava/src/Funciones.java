@@ -1,4 +1,8 @@
 public class Funciones {
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         double y = 3;
         //Area de un circulo
@@ -27,6 +31,13 @@ public class Funciones {
     public static double sphereVolumen(double r){
         return (4/3) * Math.PI * Math.pow(r, 3);
     }
+
+    /**
+     * Descripción: Función que especificando su moneda convierte una canitdad de dinero a dolares
+     * @param quantity Cantidad de dinero
+     * @param currency Tipo de moneda: Solo acepta MXN o  COP
+     * @return quantity Devuelve la cantidad actualizada en dolares
+     */
     public static double converToDolar(double quantity, String currency){
         //MXN COP
         switch (currency){
